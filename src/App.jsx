@@ -114,14 +114,14 @@ function App() {
       </nav>
 
       <section className="hero">
-        <p className="hero-tag">Frontend Developer • Full-Stack Projects</p>
+        <p className="hero-tag">FULL STACK DEVELOPER</p>
 
         <h1 className="hero-title">
           Hi, I’m <span>Stephanie</span>
         </h1>
 
         <p className="hero-subtitle">
-          I build modern web apps with clean design, interactive UI, and full-stack functionality using React, JavaScript, Express, PostgreSQL, and Neon.
+          
         </p>
 
         <div className="btn-row">
@@ -151,7 +151,7 @@ function App() {
         <h2>About</h2>
         <div className="card">
           <p> <h3>
-            I’m a software developer focused on building responsive and user-friendly web applications.</h3>
+            I'm a software developer that builds modern web apps with clean design, interactive UI, and full-stack functionality using React, JavaScript, Express, and PostgreSQL. I’m focused on building responsive and user-friendly web applications.</h3>
           </p>
         </div>
       </section>

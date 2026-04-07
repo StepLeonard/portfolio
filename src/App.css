@@ -571,3 +571,39 @@ a {
     transform: translateY(0);
   }
 }
+/* PROJECT BUTTONS */
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.project-btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+/* 💜 LIVE BUTTON */
+.live-btn {
+  background: #c084fc;
+  color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(192,132,252,0.6);
+}
+
+/* 💙 GITHUB BUTTON */
+.github-btn {
+  background: #7dd3fc;
+  color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(125,211,252,0.6);
+}
+
+.project-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}

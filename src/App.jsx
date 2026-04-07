@@ -120,9 +120,7 @@ function App() {
           Hi, I’m <span>Stephanie</span>
         </h1>
 
-        <p className="hero-subtitle">
-          
-        </p>
+        <p className="hero-subtitle"></p>
 
         <div className="btn-row">
           <a href="#projects" className="primary-btn">View Projects</a>
@@ -150,8 +148,13 @@ function App() {
       <section id="about" className="section">
         <h2>About</h2>
         <div className="card">
-          <p> <h3>
-            I'm a software developer that builds modern web apps with clean design, interactive UI, and full-stack functionality using React, JavaScript, Express, and PostgreSQL. I’m focused on building responsive and user-friendly web applications.</h3>
+          <p>
+            <h3>
+              I'm a software developer that builds modern web apps with clean design,
+              interactive UI, and full-stack functionality using React, JavaScript,
+              Express, and PostgreSQL. I’m focused on building responsive,
+              user-friendly, innovative web applications that strengthen my portfolio, while continuously pushing myself to grow and deliver high-quality, real-world applications.
+            </h3>
           </p>
         </div>
       </section>
@@ -170,20 +173,59 @@ function App() {
 
       <section id="projects" className="section">
         <h2>Projects</h2>
+
         <div className="projects-grid">
           <div className="project-card">
-            <h3>Bulldog Care App</h3>
-            <p>Full-stack bulldog care app.</p>
+            <h3>Volleypalooza Site</h3>
+            <p>Event landing page with signup form.</p>
+
+            <div className="project-buttons">
+              <a
+                href="https://volleypalooza.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn live-btn"
+              >
+                Live Site
+              </a>
+
+              <a
+                href="https://github.com/StepLeonard/volleypalooza-site"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn github-btn"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
 
           <div className="project-card">
             <h3>Countries App</h3>
-            <p>React app with routing and API.</p>
+            <p>React app with routing and API. Full-stack.</p>
+
+            <div className="project-buttons">
+              <a href="#" className="project-btn live-btn">
+                Live Site
+              </a>
+              <a href="#" className="project-btn github-btn">
+                GitHub
+              </a>
+            </div>
           </div>
 
           <div className="project-card">
             <h3>Food Truck App</h3>
             <p>Full-stack food truck app.</p>
+
+            <div className="project-buttons">
+              <a href="#" className="project-btn live-btn">
+                Live Site
+              </a>
+              <a href="#" className="project-btn github-btn">
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -197,12 +239,18 @@ function App() {
               stephanie.leonard716@gmail.com
             </a>
           </p>
+
           <p>
             GitHub:{" "}
-            <a href="https://github.com/StepLeonard" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/StepLeonard"
+              target="_blank"
+              rel="noreferrer"
+            >
               github.com/StepLeonard
             </a>
           </p>
+
           <p>
             LinkedIn:{" "}
             <a

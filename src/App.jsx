@@ -195,7 +195,7 @@ function App() {
                 rel="noreferrer"
                 className="project-btn github-btn"
               >
-                GitHub
+                GitHub Repo
               </a>
             </div>
           </div>
@@ -205,11 +205,20 @@ function App() {
             <p>React app with routing and API. Full-stack.</p>
 
             <div className="project-buttons">
-              <a href="#" className="project-btn live-btn">
+                <a
+                href="https://version-4-countries.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn live-btn"
+              >
                 Live Site
               </a>
-              <a href="#" className="project-btn github-btn">
-                GitHub
+              <a    href="https://github.com/StepLeonard/countries-app"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn github-btn"
+              >
+                GitHub Repo
               </a>
             </div>
           </div>
@@ -223,7 +232,7 @@ function App() {
                 Live Site
               </a>
               <a href="#" className="project-btn github-btn">
-                GitHub
+                GitHub Repo
               </a>
             </div>
           </div>

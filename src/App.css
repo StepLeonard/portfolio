@@ -301,19 +301,19 @@ a {
 
 /* 💖 EMAIL */
 #contact a[href^="mailto"] {
-  color: #ff9ad8;
+  color: #ffd1ea;
   font-weight: bold;
 }
 
 /* 💙 GITHUB */
 #contact a[href*="github"] {
-  color: #38bdf8;
+  color: #ff9ad8;
   font-weight: bold;
 }
 
 /* 💛 LINKEDIN */
 #contact a[href*="linkedin"] {
-  color: #ffffc5;
+  color: #ff4fa3 ;
   font-weight: bold;
 }
 /* -------------------------

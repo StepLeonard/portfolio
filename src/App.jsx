@@ -60,9 +60,15 @@ function App() {
         <div className="gum-scene">
           {(introStage === "bubble" || introStage === "pop") && (
             <>
-              <div className={`gum-bubble ${introStage === "pop" ? "pop-now" : ""}`}></div>
-              <div className={`gum-highlight big ${introStage === "pop" ? "pop-now" : ""}`}></div>
-              <div className={`gum-highlight small ${introStage === "pop" ? "pop-now" : ""}`}></div>
+              <div
+                className={`gum-bubble ${introStage === "pop" ? "pop-now" : ""}`}
+              ></div>
+              <div
+                className={`gum-highlight big ${introStage === "pop" ? "pop-now" : ""}`}
+              ></div>
+              <div
+                className={`gum-highlight small ${introStage === "pop" ? "pop-now" : ""}`}
+              ></div>
             </>
           )}
 
@@ -123,7 +129,9 @@ function App() {
         <p className="hero-subtitle"></p>
 
         <div className="btn-row">
-          <a href="#projects" className="primary-btn">View Projects</a>
+          <a href="#projects" className="primary-btn">
+            View Projects
+          </a>
 
           <a
             href="https://github.com/StepLeonard"
@@ -150,10 +158,12 @@ function App() {
         <div className="card">
           <p>
             <h3>
-              I'm a software developer that builds modern web apps with clean design,
-              interactive UI, and full-stack functionality using React, JavaScript,
-              Express, and PostgreSQL. I’m focused on building responsive,
-              user-friendly, innovative web applications that strengthen my portfolio, while continuously pushing myself to grow and deliver high-quality, real-world applications.
+              I'm a software developer that builds modern web apps with clean
+              design, interactive UI, and full-stack functionality using React,
+              JavaScript, Express, and PostgreSQL. I’m focused on building
+              responsive, user-friendly, innovative web applications that
+              strengthen my portfolio, while continuously pushing myself to grow
+              and deliver high-quality, real-world applications.
             </h3>
           </p>
         </div>
@@ -205,7 +215,7 @@ function App() {
             <p>React app with routing and API. Full-stack.</p>
 
             <div className="project-buttons">
-                <a
+              <a
                 href="https://version-4-countries.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
@@ -213,7 +223,8 @@ function App() {
               >
                 Live Site
               </a>
-              <a    href="https://github.com/StepLeonard/countries-app"
+              <a
+                href="https://github.com/StepLeonard/countries-app"
                 target="_blank"
                 rel="noreferrer"
                 className="project-btn github-btn"

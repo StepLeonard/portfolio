@@ -224,8 +224,8 @@ function App() {
           </div>
 
           <div className="project-card">
-            <h3>Food Truck App</h3>
-            <p>Full-stack food truck app.</p>
+            <h3>Product Feedback App</h3>
+            <p>⚠️Currently Under Construction⚠️</p>
 
             <div className="project-buttons">
               <a href="#" className="project-btn live-btn">

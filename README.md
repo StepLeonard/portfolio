@@ -1,16 +1,55 @@
-# React + Vite
+# Hi, I'm Stephanie 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Frontend Developer | React | JavaScript | Full-Stack Projects
 
-Currently, two official plugins are available:
+I build modern web apps with clean UI, responsive design, and full-stack functionality using React, JavaScript, Node.js, Express, and PostgreSQL. I'm dedicated to bulding innovative, high-quality projects and continuously expanding my portfolio, with a strong work ethic and a focus on delivering real, impactful solutions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![HTML](https://img.shields.io/badge/HTML-0f172a?style=for-the-badge&logo=html5&logoColor=f97316)
+![CSS](https://img.shields.io/badge/CSS-0f172a?style=for-the-badge&logo=css&logoColor=38bdf8)
+![JavaScript](https://img.shields.io/badge/JavaScript-0f172a?style=for-the-badge&logo=javascript&logoColor=facc15)
+![React](https://img.shields.io/badge/React-0f172a?style=for-the-badge&logo=react&logoColor=22d3ee)
+![Node.js](https://img.shields.io/badge/Node.js-0f172a?style=for-the-badge&logo=nodedotjs&logoColor=22c55e)
+![Express](https://img.shields.io/badge/Express-0f172a?style=for-the-badge&logo=express&logoColor=ffffff)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0f172a?style=for-the-badge&logo=postgresql&logoColor=60a5fa)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## About Me
+
+- I build frontend and full-stack web apps
+- I work with React, JavaScript, Express, PostgreSQL, and Neon
+- I enjoy building clean, modern, user-friendly interfaces
+- I’m growing my portfolio and software engineering skills
+
+---
+
+## Featured Projects
+
+### Volleypalooza
+Event landing page with signup form.
+
+[🌐 Live Site](https://volleypalooza.netlify.app/)  
+[💻 GitHub Repo](https://github.com/StepLeonard/volleypalooza-site)
+
+### Countries App
+A React app that displays countries, uses routing, and shows country detail pages. Full-stack App.
+
+[🌐 Live Site](https://version-4-countries.netlify.app/)  
+[💻 GitHub Repo](https://github.com/StepLeonard/countries-app)
+
+### Product-Feed-Back-App
+A full-stack app that connects a React frontend to an Express backend and PostgreSQL database.
+
+⚠️UNDER CONSTRUCTION⚠️
+
+---
+
+## Connect With Me
+
+- GitHub: https://github.com/StepLeonard
+- LinkedIn: https://www.linkedin.com/in/stephanieleonard716/
+- Portfolio: https://stepleonard-portfolio.netlify.app/

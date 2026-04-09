@@ -218,7 +218,7 @@ function App() {
 
           <div className="project-card">
             <h3>Volleypalooza Site</h3>
-            <p>Event landing page with signup form.</p>
+            <p>A responsive frontend application featuring a structured layout and interactive form handling, designed to simulate an event registration system while emphasizing accessibility, responsiveness, and modern UI practices.</p>
 
             <div className="project-buttons">
               <a
@@ -243,7 +243,7 @@ function App() {
 
           <div className="project-card">
             <h3>Countries App</h3>
-            <p>React app with routing and API. Full-stack.</p>
+            <p> A full-stack application using React and Express, integrating external APIs and custom backend endpoints to manage country data, user submissions, and view tracking. Utilized dynamic routing, state management, and RESTful architecture to deliver a seamless user experience.</p>
 
             <div className="project-buttons">
               <a
@@ -268,7 +268,10 @@ function App() {
           <div className="project-card">
             <h3>Product Feedback App</h3>
             <p>⚠️Currently Under Construction⚠️ </p>
-            
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
 
             <div className="project-buttons">
               <a href="#" className="project-btn live-btn">
@@ -279,6 +282,49 @@ function App() {
               </a>
             </div>
           </div>
+
+          <div className="project-card">
+  <h3>Food Trucks App</h3>
+
+  <p>
+     A full-stack food truck application with Express and PostgreSQL,
+    implementing RESTful API endpoints to retrieve, filter, and manage food
+    truck data. Collaborated in a team environment using GitHub workflows,
+    including pull requests, code reviews, and version control best practices.
+  </p>
+
+  <div className="project-buttons">
+    <a
+      href="https://github.com/StepLeonard/food-trucks-app"
+      target="_blank"
+      rel="noreferrer"
+      className="project-btn github-btn"
+    >
+      GitHub Repo
+    </a>
+  </div>
+</div>
+<div className="project-card">
+  <h3>Developer Portfolio</h3>
+
+  <p>
+    Developed a personal portfolio website to showcase projects,
+    skills, and contact information using React. Features a custom animated
+    intro, responsive layout, and reusable component structure, highlighting
+    frontend development, UI design, and attention to user experience.
+  </p>
+
+  <div className="project-buttons">
+    <a
+      href="https://github.com/StepLeonard/portfolio"
+      target="_blank"
+      rel="noreferrer"
+      className="project-btn github-btn"
+    >
+      GitHub Repo
+    </a>
+  </div>
+</div>
         </div>
       </section>
 

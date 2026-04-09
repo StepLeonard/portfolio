@@ -186,6 +186,37 @@ function App() {
 
         <div className="projects-grid">
           <div className="project-card">
+            <h3>Extension Management Dashboard</h3>
+
+            <p>
+              A responsive extension management dashboard featuring dynamic
+              state handling, toggle functionality, and filtering (All, Active,
+              Inactive). Designed with a reusable card-based component system
+              and a clean, user-focused interface.
+            </p>
+
+            <div className="project-buttons">
+              <a
+                href="https://extension-frontend.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn live-btn"
+              >
+                Live Site
+              </a>
+
+              <a
+                href="https://github.com/StepLeonard/extensions-project"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn github-btn"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+
+          <div className="project-card">
             <h3>Volleypalooza Site</h3>
             <p>Event landing page with signup form.</p>
 
@@ -236,7 +267,8 @@ function App() {
 
           <div className="project-card">
             <h3>Product Feedback App</h3>
-            <p>⚠️Currently Under Construction⚠️</p>
+            <p>⚠️Currently Under Construction⚠️ </p>
+            
 
             <div className="project-buttons">
               <a href="#" className="project-btn live-btn">

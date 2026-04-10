@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import profilePic from "./assets/profile.jpg";
 import "./App.css";
 import {
   FaHtml5,
@@ -11,34 +11,6 @@ import {
 import { SiExpress, SiPostgresql, SiPostman } from "react-icons/si";
 
 function App() {
-  const [introStage, setIntroStage] = useState("bubble");
-  const popSoundRef = useRef(null);
-
-  useEffect(() => {
-    const popTimer = setTimeout(() => {
-      setIntroStage("pop");
-
-      if (popSoundRef.current) {
-        popSoundRef.current.currentTime = 0;
-        popSoundRef.current.play().catch(() => {});
-      }
-    }, 1500);
-
-    const revealTimer = setTimeout(() => {
-      setIntroStage("reveal");
-    }, 2000);
-
-    const finishTimer = setTimeout(() => {
-      setIntroStage("done");
-    }, 3000);
-
-    return () => {
-      clearTimeout(popTimer);
-      clearTimeout(revealTimer);
-      clearTimeout(finishTimer);
-    };
-  }, []);
-
   const skills = [
     { name: "HTML", icon: <FaHtml5 />, className: "skill-html" },
     { name: "CSS", icon: <FaCss3Alt />, className: "skill-css" },
@@ -52,61 +24,13 @@ function App() {
     { name: "Postman", icon: <SiPostman />, className: "skill-postman" },
   ];
 
-  if (introStage !== "done") {
-    return (
-      <div className="intro-screen">
-        <audio ref={popSoundRef} src="/pop.mp3" preload="auto" />
-
-        <div className="gum-scene">
-          {(introStage === "bubble" || introStage === "pop") && (
-            <>
-              <div
-                className={`gum-bubble ${introStage === "pop" ? "pop-now" : ""}`}
-              ></div>
-              <div
-                className={`gum-highlight big ${introStage === "pop" ? "pop-now" : ""}`}
-              ></div>
-              <div
-                className={`gum-highlight small ${introStage === "pop" ? "pop-now" : ""}`}
-              ></div>
-            </>
-          )}
-
-          {(introStage === "pop" || introStage === "reveal") && (
-            <>
-              <div className="gum-burst-ring ring-one"></div>
-              <div className="gum-burst-ring ring-two"></div>
-
-              <div className="gum-piece piece-1"></div>
-              <div className="gum-piece piece-2"></div>
-              <div className="gum-piece piece-3"></div>
-              <div className="gum-piece piece-4"></div>
-              <div className="gum-piece piece-5"></div>
-              <div className="gum-piece piece-6"></div>
-              <div className="gum-piece piece-7"></div>
-              <div className="gum-piece piece-8"></div>
-            </>
-          )}
-
-          {(introStage === "reveal" || introStage === "done") && (
-            <img
-              className={`intro-profile-pic ${introStage === "reveal" ? "show-pic" : ""}`}
-              src="https://avatars.githubusercontent.com/u/202838551?v=4"
-              alt="Stephanie profile"
-            />
-          )}
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="app page-enter">
       <nav className="navbar">
         <div className="profile-wrapper">
           <img
             className="profile-pic"
-            src="https://avatars.githubusercontent.com/u/202838551?v=4"
+            src={profilePic}
             alt="Stephanie profile"
           />
         </div>
@@ -120,7 +44,10 @@ function App() {
       </nav>
 
       <section className="hero">
-        <p className="hero-tag">FULL STACK DEVELOPER</p>
+        <p className="hero-tag">
+          Full-Stack Developer building responsive React applications and
+          scalable backend systems with Express & PostgreSQL.
+        </p>
 
         <h1 className="hero-title">
           Hi, I’m <span>Stephanie</span>
@@ -158,12 +85,14 @@ function App() {
         <div className="card">
           <p>
             <h3>
-              I'm a software developer that builds modern web apps with clean
-              design, interactive UI, and full-stack functionality using React,
-              JavaScript, Express, and PostgreSQL. I’m focused on building
-              responsive, user-friendly, innovative web applications that
-              strengthen my portfolio, while continuously pushing myself to grow
-              and deliver high-quality, real-world applications.
+              I’m a Full-Stack Developer focused on building responsive web
+              applications using React, Node.js, Express, and PostgreSQL. I have
+              experience developing RESTful APIs, managing application state,
+              and creating user-friendly interfaces that deliver real
+              functionality. </h3></p>
+              <p><h3>I’m continuously improving my skills through
+              hands-on projects and bring a strong work ethic, adaptability, and
+              a collaborative mindset to every project.
             </h3>
           </p>
         </div>
@@ -182,17 +111,24 @@ function App() {
       </section>
 
       <section id="projects" className="section">
+        
         <h2>Projects</h2>
+        <h3>
+          A selection of full-stack and frontend applications demonstrating
+          experience with React, RESTful APIs, and modern web development
+          practices.
+        </h3>
 
         <div className="projects-grid">
           <div className="project-card">
             <h3>Extension Management Dashboard</h3>
 
             <p>
-              A responsive extension management dashboard featuring dynamic
-              state handling, toggle functionality, and filtering (All, Active,
-              Inactive). Designed with a reusable card-based component system
-              and a clean, user-focused interface.
+              Built a responsive extension management dashboard using React,
+              featuring dynamic state handling, toggle functionality, and
+              real-time filtering (All, Active, Inactive). Designed a reusable
+              component-based architecture to manage UI state efficiently while
+              delivering a clean, user-focused interface.
             </p>
 
             <div className="project-buttons">
@@ -218,7 +154,13 @@ function App() {
 
           <div className="project-card">
             <h3>Volleypalooza Site</h3>
-            <p>A responsive frontend application featuring a structured layout and interactive form handling, designed to simulate an event registration system while emphasizing accessibility, responsiveness, and modern UI practices.</p>
+            <p>
+              Developed a responsive frontend application simulating an event
+              registration platform, with structured layouts and interactive
+              form handling. Focused on accessibility, responsive design, and
+              modern UI practices to create a seamless user experience across
+              devices.
+            </p>
 
             <div className="project-buttons">
               <a
@@ -243,7 +185,14 @@ function App() {
 
           <div className="project-card">
             <h3>Countries App</h3>
-            <p> A full-stack application using React and Express, integrating external APIs and custom backend endpoints to manage country data, user submissions, and view tracking. Utilized dynamic routing, state management, and RESTful architecture to deliver a seamless user experience.</p>
+            <p>
+              Built a full-stack web application using React, Node.js, Express,
+              and PostgreSQL, integrating external APIs and custom backend
+              endpoints to manage country data, user submissions, and view
+              tracking. Implemented dynamic routing, state management, and
+              RESTful API architecture to deliver a scalable and interactive
+              user experience.
+            </p>
 
             <div className="project-buttons">
               <a
@@ -267,9 +216,13 @@ function App() {
 
           <div className="project-card">
             <h3>Product Feedback App</h3>
-            <p>⚠️Currently Under Construction⚠️ </p>
-            <br></br>
-            <br></br>
+            <p>
+              ⚠️Currently developing a full-stack product feedback platform
+              designed to collect, manage, and analyze user input. Focused on
+              building scalable backend architecture, dynamic UI updates, and
+              efficient state management to support real-time
+              interaction.⚠️{" "}
+            </p>
             <br></br>
             <br></br>
 
@@ -284,47 +237,49 @@ function App() {
           </div>
 
           <div className="project-card">
-  <h3>Food Trucks App</h3>
+            <h3>Food Trucks App</h3>
 
-  <p>
-     A full-stack food truck application with Express and PostgreSQL,
-    implementing RESTful API endpoints to retrieve, filter, and manage food
-    truck data. Collaborated in a team environment using GitHub workflows,
-    including pull requests, code reviews, and version control best practices.
-  </p>
+            <p>
+              Developed a full-stack food truck application using Express and
+              PostgreSQL, implementing RESTful API endpoints for retrieving,
+              filtering, and managing data. Collaborated in a team environment
+              using GitHub workflows, including pull requests, code reviews, and
+              version control best practices.
+            </p>
 
-  <div className="project-buttons">
-    <a
-      href="https://github.com/StepLeonard/food-trucks-app"
-      target="_blank"
-      rel="noreferrer"
-      className="project-btn github-btn"
-    >
-      GitHub Repo
-    </a>
-  </div>
-</div>
-<div className="project-card">
-  <h3>Developer Portfolio</h3>
+            <div className="project-buttons">
+              <a
+                href="https://github.com/StepLeonard/food-trucks-app"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn github-btn"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
 
-  <p>
-    Developed a personal portfolio website to showcase projects,
-    skills, and contact information using React. Features a custom animated
-    intro, responsive layout, and reusable component structure, highlighting
-    frontend development, UI design, and attention to user experience.
-  </p>
+          <div className="project-card">
+            <h3>Developer Portfolio</h3>
 
-  <div className="project-buttons">
-    <a
-      href="https://github.com/StepLeonard/portfolio"
-      target="_blank"
-      rel="noreferrer"
-      className="project-btn github-btn"
-    >
-      GitHub Repo
-    </a>
-  </div>
-</div>
+            <p>
+              Designed and developed a personal portfolio website using React to
+              showcase projects, technical skills, and contact information.
+              Built with a responsive layout and reusable component structure,
+              emphasizing modern UI design, performance, and user experience.
+            </p>
+
+            <div className="project-buttons">
+              <a
+                href="https://github.com/StepLeonard/portfolio"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn github-btn"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

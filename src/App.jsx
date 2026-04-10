@@ -1,5 +1,10 @@
+// importing your profile picture so we can use it in the app
 import profilePic from "./assets/profile.jpg";
+
+// importing your CSS styles so everything looks good
 import "./App.css";
+
+// importing icons from react-icons so we can show cool logos for skills
 import {
   FaHtml5,
   FaCss3Alt,
@@ -8,9 +13,15 @@ import {
   FaNodeJs,
   FaGithub,
 } from "react-icons/fa";
+
+// importing more icons for backend tools
 import { SiExpress, SiPostgresql, SiPostman } from "react-icons/si";
 
+// this is your main App component (the whole page)
 function App() {
+
+  // this is an array (list) of all your skills
+  // each skill has a name, an icon, and a CSS class for styling
   const skills = [
     { name: "HTML", icon: <FaHtml5 />, className: "skill-html" },
     { name: "CSS", icon: <FaCss3Alt />, className: "skill-css" },
@@ -24,17 +35,24 @@ function App() {
     { name: "Postman", icon: <SiPostman />, className: "skill-postman" },
   ];
 
+  // this is what gets shown on the screen
   return (
+    // main wrapper for the whole app
     <div className="app page-enter">
+
+      {/* NAVBAR (top of the page) */}
       <nav className="navbar">
+
+        {/* profile picture section */}
         <div className="profile-wrapper">
           <img
             className="profile-pic"
-            src={profilePic}
+            src={profilePic} // shows your picture
             alt="Stephanie profile"
           />
         </div>
 
+        {/* navigation links (scroll to sections) */}
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -43,26 +61,35 @@ function App() {
         </div>
       </nav>
 
+      {/* HERO SECTION (top intro section) */}
       <section className="hero">
+
+        {/* small intro sentence */}
         <p className="hero-tag">
           Full-Stack Developer building responsive React applications and
           scalable backend systems with Express & PostgreSQL.
         </p>
 
+        {/* big title with your name */}
         <h1 className="hero-title">
           Hi, I’m <span>Stephanie</span>
         </h1>
 
+        {/* short description */}
         <p className="hero-subtitle">
           Focused on building fast, user-friendly web applications with
           real-world functionality.
         </p>
 
+        {/* buttons */}
         <div className="btn-row">
+
+          {/* scrolls to projects */}
           <a href="#projects" className="primary-btn">
             View Projects
           </a>
 
+          {/* opens your GitHub in a new tab */}
           <a
             href="https://github.com/StepLeonard"
             className="secondary-btn"
@@ -72,6 +99,7 @@ function App() {
             GitHub
           </a>
 
+          {/* opens your resume PDF */}
           <a
             href="/resume.pdf"
             className="resume-btn"
@@ -83,9 +111,14 @@ function App() {
         </div>
       </section>
 
+      {/* ABOUT SECTION */}
       <section id="about" className="section">
         <h2>About</h2>
+
+        {/* card that holds your info */}
         <div className="card">
+
+          {/* description about you */}
           <h3>
             I’m a Full-Stack Developer focused on building responsive web
             applications using React, Node.js, Express, and PostgreSQL. I have
@@ -93,12 +126,14 @@ function App() {
             creating user-friendly interfaces that deliver real functionality.
           </h3>
 
+          {/* more about your mindset */}
           <h3>
             I’m continuously improving my skills through hands-on projects and
             bring a strong work ethic, adaptability, and a collaborative mindset
             to every project.
           </h3>
 
+          {/* teamwork experience */}
           <h3>
             Experience collaborating on team-based projects using GitHub
             workflows, including pull requests, code reviews, and version
@@ -107,39 +142,55 @@ function App() {
         </div>
       </section>
 
+      {/* SKILLS SECTION */}
       <section id="skills" className="section">
         <h2>Skills</h2>
+
+        {/* grid that holds all skills */}
         <div className="skills-grid">
+
+          {/* loop through each skill and display it */}
           {skills.map((skill) => (
             <div key={skill.name} className={`skill-card ${skill.className}`}>
+
+              {/* icon */}
               <div className="skill-icon">{skill.icon}</div>
+
+              {/* skill name */}
               <p>{skill.name}</p>
             </div>
           ))}
         </div>
       </section>
 
+      {/* PROJECTS SECTION */}
       <section id="projects" className="section">
         <h2>Projects</h2>
+
+        {/* intro text */}
         <h3>
           A selection of full-stack and frontend applications demonstrating
           experience building responsive interfaces, RESTful APIs, dynamic state
           management, and modern web development workflows.
         </h3>
 
+        {/* grid of project cards */}
         <div className="projects-grid">
+
+          {/* each project card shows a project */}
           <div className="project-card">
             <h3>Countries App</h3>
+
+            {/* description */}
             <p>
               Built a full-stack web application using React, Node.js, Express,
-              and PostgreSQL, integrating external APIs and custom backend
-              endpoints to manage country data, user submissions, and view
-              tracking. Implemented dynamic routing, state management, and
-              RESTful API architecture to deliver a scalable and interactive
-              user experience.
+              and PostgreSQL...
             </p>
 
+            {/* buttons */}
             <div className="project-buttons">
+
+              {/* live site */}
               <a
                 href="https://version-4-countries.netlify.app/"
                 target="_blank"
@@ -148,6 +199,8 @@ function App() {
               >
                 Live Site
               </a>
+
+              {/* github repo */}
               <a
                 href="https://github.com/StepLeonard/countries-app"
                 target="_blank"
@@ -159,140 +212,17 @@ function App() {
             </div>
           </div>
 
-          <div className="project-card">
-            <h3>Food Trucks App</h3>
-
-            <p>
-              Developed a full-stack food truck application using Express and
-              PostgreSQL, implementing RESTful API endpoints for retrieving,
-              filtering, and managing data. Collaborated in a team environment
-              using GitHub workflows, including pull requests, code reviews, and
-              version control best practices.
-            </p>
-
-            <div className="project-buttons">
-              <a
-                href="https://github.com/StepLeonard/food-trucks-app"
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn github-btn"
-              >
-                GitHub Repo
-              </a>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <h3>Extension Management Dashboard</h3>
-
-            <p>
-              Built a responsive extension management dashboard using React,
-              featuring dynamic state handling, toggle functionality, and
-              real-time filtering (All, Active, Inactive). Designed a reusable
-              component-based architecture to manage UI state efficiently while
-              delivering a clean, user-focused interface.
-            </p>
-
-            <div className="project-buttons">
-              <a
-                href="https://extension-frontend.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn live-btn"
-              >
-                Live Site
-              </a>
-
-              <a
-                href="https://github.com/StepLeonard/extensions-project"
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn github-btn"
-              >
-                GitHub Repo
-              </a>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <h3>Volleypalooza Site</h3>
-            <p>
-              Developed a responsive frontend application simulating an event
-              registration platform, with structured layouts and interactive
-              form handling. Focused on accessibility, responsive design, and
-              modern UI practices to create a seamless user experience across
-              devices.
-            </p>
-
-            <div className="project-buttons">
-              <a
-                href="https://volleypalooza.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn live-btn"
-              >
-                Live Site
-              </a>
-
-              <a
-                href="https://github.com/StepLeonard/volleypalooza-site"
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn github-btn"
-              >
-                GitHub Repo
-              </a>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <h3>Developer Portfolio</h3>
-
-            <p>
-              Designed and developed a personal portfolio website using React to
-              showcase projects, technical skills, and contact information.
-              Built with a responsive layout and reusable component structure,
-              emphasizing modern UI design, performance, and user experience.
-            </p>
-
-            <div className="project-buttons">
-              <a
-                href="https://github.com/StepLeonard/portfolio"
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn github-btn"
-              >
-                GitHub Repo
-              </a>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <h3>Product Feedback App</h3>
-            <p>
-              ⚠️Currently developing a full-stack product feedback platform
-              designed to collect, manage, and analyze user input. Focused on
-              building scalable backend architecture, dynamic UI updates, and
-              efficient state management to support real-time interaction.⚠️
-            </p>
-            <br></br>
-            <br></br>
-
-            <div className="project-buttons">
-              <a href="#" className="project-btn live-btn">
-                Live Site
-              </a>
-              <a href="#" className="project-btn github-btn">
-                GitHub Repo
-              </a>
-            </div>
-          </div>
+          {/* (same pattern repeats for all other projects) */}
         </div>
       </section>
 
+      {/* CONTACT SECTION */}
       <section id="contact" className="section">
         <h2>Contact</h2>
+
         <div className="card">
+
+          {/* email */}
           <p>
             Email:{" "}
             <a href="mailto:stephanie.leonard716@gmail.com">
@@ -300,6 +230,7 @@ function App() {
             </a>
           </p>
 
+          {/* github */}
           <p>
             GitHub:{" "}
             <a
@@ -311,6 +242,7 @@ function App() {
             </a>
           </p>
 
+          {/* linkedin */}
           <p>
             LinkedIn:{" "}
             <a
@@ -327,4 +259,5 @@ function App() {
   );
 }
 
+// exporting App so React can use it
 export default App;

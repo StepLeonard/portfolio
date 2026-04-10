@@ -437,3 +437,195 @@ a {
 .project-btn:hover {
   opacity: 0.98;
 }
+/* -------------------------
+   TABLET
+------------------------- */
+
+@media (max-width: 1024px) {
+  .app {
+    padding: 20px;
+  }
+
+  .navbar,
+  .hero,
+  .section {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 52px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 768px) {
+  .app {
+    padding: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .profile-pic {
+    width: 96px;
+    height: 96px;
+  }
+
+  .hero {
+    padding: 32px 0;
+    text-align: center;
+  }
+
+  .hero-tag {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .hero-title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .btn-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn,
+  .resume-btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  .section {
+    margin-bottom: 56px;
+  }
+
+  .section h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .skill-icon {
+    font-size: 34px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .project-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  #projects > h3 {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  #contact .card p {
+    line-height: 1.7;
+    word-break: break-word;
+  }
+}
+
+/* -------------------------
+   SMALL PHONES
+------------------------- */
+
+@media (max-width: 480px) {
+  .app {
+    padding: 14px;
+  }
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .section h2 {
+    font-size: 26px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 16px;
+  }
+
+  .skill-icon {
+    font-size: 30px;
+  }
+
+  .card,
+  .project-card {
+    padding: 18px;
+  }
+}

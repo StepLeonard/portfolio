@@ -116,6 +116,91 @@ function App() {
           </div>
         </section>
 
+        {/* ✅ PROJECTS MOVED HERE */}
+        <section id="projects" className="section">
+          <h2>Projects</h2>
+          <h3>
+            A selection of full-stack and frontend applications demonstrating
+            experience building responsive interfaces, RESTful APIs, dynamic state
+            management, and modern web development workflows.
+          </h3>
+
+          <div className="projects-grid">
+            <div className="project-card">
+              <h3>Countries App</h3>
+              <p>
+                Built a full-stack web application using React, Node.js, Express,
+                and PostgreSQL...
+              </p>
+              <div className="project-buttons">
+                <a href="https://version-4-countries.netlify.app/" target="_blank" rel="noreferrer" className="project-btn live-btn">
+                  Live Site
+                </a>
+                <a href="https://github.com/StepLeonard/countries-app" target="_blank" rel="noreferrer" className="project-btn github-btn">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <h3>Food Trucks App</h3>
+              <p>Developed a full-stack food truck application...</p>
+              <div className="project-buttons">
+                <a href="https://github.com/StepLeonard/food-trucks-app" target="_blank" rel="noreferrer" className="project-btn github-btn">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <h3>Extension Management Dashboard</h3>
+              <p>Built a responsive extension dashboard...</p>
+              <div className="project-buttons">
+                <a href="https://extension-frontend.netlify.app/" target="_blank" rel="noreferrer" className="project-btn live-btn">
+                  Live Site
+                </a>
+                <a href="https://github.com/StepLeonard/extensions-project" target="_blank" rel="noreferrer" className="project-btn github-btn">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <h3>Volleypalooza Site</h3>
+              <p>Developed a responsive frontend application...</p>
+              <div className="project-buttons">
+                <a href="https://volleypalooza.netlify.app/" target="_blank" rel="noreferrer" className="project-btn live-btn">
+                  Live Site
+                </a>
+                <a href="https://github.com/StepLeonard/volleypalooza-site" target="_blank" rel="noreferrer" className="project-btn github-btn">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <h3>Developer Portfolio</h3>
+              <p>Designed and developed a personal portfolio website...</p>
+              <div className="project-buttons">
+                <a href="https://github.com/StepLeonard/portfolio" target="_blank" rel="noreferrer" className="project-btn github-btn">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <h3>Product Feedback App</h3>
+              <p>⚠️Currently developing a full-stack product feedback platform...</p>
+              <div className="project-buttons">
+                <a href="https://github.com/StepLeonard/product-feedback-app" target="_blank" rel="noreferrer" className="project-btn github-btn">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SKILLS NOW BELOW PROJECTS */}
         <section id="skills" className="section">
           <h2>Skills</h2>
           <div className="skills-grid">
@@ -130,225 +215,22 @@ function App() {
           </div>
         </section>
 
-        <section id="projects" className="section">
-          <h2>Projects</h2>
-          <h3>
-            A selection of full-stack and frontend applications demonstrating
-            experience building responsive interfaces, RESTful APIs, dynamic state
-            management, and modern web development workflows.
-          </h3>
-
-          <div className="projects-grid">
-            <div className="project-card">
-              <h3>Countries App</h3>
-              <p>
-                Built a full-stack web application using React, Node.js, Express,
-                and PostgreSQL, integrating external APIs and custom backend
-                endpoints to manage country data, user submissions, and view
-                tracking. Implemented dynamic routing, state management, and
-                RESTful API architecture to deliver a scalable and interactive
-                user experience.
-              </p>
-
-              <div className="project-buttons">
-                <a
-                  href="https://version-4-countries.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn live-btn"
-                  aria-label="Open live site for Countries App"
-                >
-                  Live Site
-                </a>
-                <a
-                  href="https://github.com/StepLeonard/countries-app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn github-btn"
-                  aria-label="Open GitHub repository for Countries App"
-                >
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <h3>Food Trucks App</h3>
-
-              <p>
-                Developed a full-stack food truck application using Express and
-                PostgreSQL, implementing RESTful API endpoints for retrieving,
-                filtering, and managing data. Collaborated in a team environment
-                using GitHub workflows, including pull requests, code reviews, and
-                version control best practices.
-              </p>
-
-              <div className="project-buttons">
-                <a
-                  href="https://github.com/StepLeonard/food-trucks-app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn github-btn"
-                  aria-label="Open GitHub repository for Food Trucks App"
-                >
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <h3>Extension Management Dashboard</h3>
-
-              <p>
-                Built a responsive extension management dashboard using React,
-                featuring dynamic state handling, toggle functionality, and
-                real-time filtering (All, Active, Inactive). Designed a reusable
-                component-based architecture to manage UI state efficiently while
-                delivering a clean, user-focused interface.
-              </p>
-
-              <div className="project-buttons">
-                <a
-                  href="https://extension-frontend.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn live-btn"
-                  aria-label="Open live site for Extension Management Dashboard"
-                >
-                  Live Site
-                </a>
-
-                <a
-                  href="https://github.com/StepLeonard/extensions-project"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn github-btn"
-                  aria-label="Open GitHub repository for Extension Management Dashboard"
-                >
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <h3>Volleypalooza Site</h3>
-              <p>
-                Developed a responsive frontend application simulating an event
-                registration platform, with structured layouts and interactive
-                form handling. Focused on accessibility, responsive design, and
-                modern UI practices to create a seamless user experience across
-                devices.
-              </p>
-
-              <div className="project-buttons">
-                <a
-                  href="https://volleypalooza.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn live-btn"
-                  aria-label="Open live site for Volleypalooza Site"
-                >
-                  Live Site
-                </a>
-
-                <a
-                  href="https://github.com/StepLeonard/volleypalooza-site"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn github-btn"
-                  aria-label="Open GitHub repository for Volleypalooza Site"
-                >
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <h3>Developer Portfolio</h3>
-
-              <p>
-                Designed and developed a personal portfolio website using React to
-                showcase projects, technical skills, and contact information.
-                Built with a responsive layout and reusable component structure,
-                emphasizing modern UI design, performance, and user experience.
-              </p>
-
-              <div className="project-buttons">
-                <a
-                  href="https://github.com/StepLeonard/portfolio"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn github-btn"
-                  aria-label="Open GitHub repository for Developer Portfolio"
-                >
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <h3>Product Feedback App</h3>
-              <p>
-                ⚠️Currently developing a full-stack product feedback platform
-                designed to collect, manage, and analyze user input. Focused on
-                building scalable backend architecture, dynamic UI updates, and
-                efficient state management to support real-time interaction.⚠️
-              </p>
-              <br></br>
-              <br></br>
-
-              <div className="project-buttons">
-                <a
-                  href="https://github.com/StepLeonard/product-feedback-app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn github-btn"
-                  aria-label="Open GitHub repository for Developer Portfolio"
-                >
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="contact" className="section">
           <h2>Contact</h2>
           <div className="card">
             <p>
-              <a
-                href="mailto:stephanie.leonard716@gmail.com"
-                className="contact-link"
-                aria-label="Send email to Stephanie Leonard"
-              >
-                <FaEnvelope aria-hidden="true" />
-                <span>stephanie.leonard716@gmail.com</span>
+              <a href="mailto:stephanie.leonard716@gmail.com" className="contact-link">
+                <FaEnvelope /> stephanie.leonard716@gmail.com
               </a>
             </p>
-
             <p>
-              <a
-                href="https://github.com/StepLeonard"
-                target="_blank"
-                rel="noreferrer"
-                className="contact-link"
-                aria-label="Visit Stephanie Leonard's GitHub profile"
-              >
-                <FaGithub aria-hidden="true" />
-                <span>github.com/StepLeonard</span>
+              <a href="https://github.com/StepLeonard" target="_blank" rel="noreferrer" className="contact-link">
+                <FaGithub /> github.com/StepLeonard
               </a>
             </p>
-
             <p>
-              <a
-                href="https://www.linkedin.com/in/stephanieleonard716/"
-                target="_blank"
-                rel="noreferrer"
-                className="contact-link"
-                aria-label="Visit Stephanie Leonard's LinkedIn profile"
-              >
-                <FaLinkedin aria-hidden="true" />
-                <span>linkedin.com/in/stephanieleonard716</span>
+              <a href="https://www.linkedin.com/in/stephanieleonard716/" target="_blank" rel="noreferrer" className="contact-link">
+                <FaLinkedin /> linkedin.com/in/stephanieleonard716
               </a>
             </p>
           </div>

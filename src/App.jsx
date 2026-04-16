@@ -127,6 +127,22 @@ function App() {
 
           <div className="projects-grid">
             <div className="project-card">
+              <h3>Product Feedback App</h3>
+              <p>
+                This project is a full-stack product feedback application where users can submit, view, and filter feedback based on categories like UI, UX, Feature, Bug, and Enhancement.
+              </p>
+              <div className="project-buttons">
+                <a href="https://my-product-feedback-app.netlify.app/" target="_blank" rel="noreferrer" className="project-btn live-btn">
+                  Live Site
+                </a>
+                <a href="https://github.com/StepLeonard/product-feedback-app" target="_blank" rel="noreferrer" className="project-btn github-btn">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+
+
+            <div className="project-card">
               <h3>Countries App</h3>
               <p>
                 Built a full-stack web application using React, Node.js, Express,
@@ -146,6 +162,9 @@ function App() {
               <h3>Food Trucks App</h3>
               <p>Developed a full-stack food truck application...</p>
               <div className="project-buttons">
+                <a href="https://my-food-truck-app.netlify.app/" target="_blank" rel="noreferrer" className="project-btn live-btn">
+                  Live Site
+                </a>
                 <a href="https://github.com/StepLeonard/food-trucks-app" target="_blank" rel="noreferrer" className="project-btn github-btn">
                   GitHub Repo
                 </a>
@@ -154,7 +173,7 @@ function App() {
 
             <div className="project-card">
               <h3>Extension Management Dashboard</h3>
-              <p>Built a responsive extension dashboard...</p>
+              <p>This project is a responsive extension dashboard</p>
               <div className="project-buttons">
                 <a href="https://extension-frontend.netlify.app/" target="_blank" rel="noreferrer" className="project-btn live-btn">
                   Live Site
@@ -188,15 +207,7 @@ function App() {
               </div>
             </div>
 
-            <div className="project-card">
-              <h3>Product Feedback App</h3>
-              <p>⚠️Currently developing a full-stack product feedback platform...</p>
-              <div className="project-buttons">
-                <a href="https://github.com/StepLeonard/product-feedback-app" target="_blank" rel="noreferrer" className="project-btn github-btn">
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
+           
           </div>
         </section>
 

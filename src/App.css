@@ -63,6 +63,18 @@ button:focus-visible,
   flex-shrink: 0;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* -------------------------
    LAYOUT
 ------------------------- */
@@ -187,6 +199,26 @@ button:focus-visible,
 .hero-subtitle {
   font-size: 20px;
   color: #cbd5e1;
+}
+
+.terminal-line {
+  font-family: "Courier New", ui-monospace, monospace;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 9px;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: #7dd3fc;
+  box-shadow: 0 0 8px rgba(125, 211, 252, 0.6);
+  animation: cursorBlink 1s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .btn-row {
@@ -343,6 +375,21 @@ button:focus-visible,
 
 .skill-postman { color: #ff6c37; }
 .skill-postman:hover { box-shadow: 0 0 18px rgba(255,108,55,0.75), 0 0 34px rgba(255,108,55,0.42); }
+
+.skill-typescript { color: #3178c6; }
+.skill-typescript:hover { box-shadow: 0 0 18px rgba(49,120,198,0.75), 0 0 34px rgba(49,120,198,0.42); }
+
+.skill-python { color: #ffd43b; }
+.skill-python:hover { box-shadow: 0 0 18px rgba(255,212,59,0.72), 0 0 34px rgba(255,212,59,0.38); }
+
+.skill-bitbucket { color: #2684ff; }
+.skill-bitbucket:hover { box-shadow: 0 0 18px rgba(38,132,255,0.75), 0 0 34px rgba(38,132,255,0.42); }
+
+.skill-jira { color: #0052cc; }
+.skill-jira:hover { box-shadow: 0 0 18px rgba(0,82,204,0.75), 0 0 34px rgba(0,82,204,0.42); }
+
+.skill-security { color: #f43f5e; }
+.skill-security:hover { box-shadow: 0 0 18px rgba(244,63,94,0.75), 0 0 34px rgba(244,63,94,0.42); }
 
 /* -------------------------
    PROJECTS

@@ -199,6 +199,18 @@ function App() {
 
           <div className="projects-grid">
             <div className="project-card">
+              <h3>API Security Scanner</h3>
+              <p>
+                A full-stack tool that audits public URLs for common security vulnerabilities — checking for missing security headers, improper HTTPS enforcement, and exposed sensitive files like .env or .git/config. Returns detailed pass/fail results with an overall security score.
+              </p>
+              <div className="project-buttons">
+                <a href="https://github.com/StepLeonard/api-security-scanner" target="_blank" rel="noreferrer" className="project-btn github-btn">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div className="project-card">
               <h3>Product Feedback App</h3>
               <p>
                 This project is a full-stack product feedback application where users can submit, view, and filter feedback based on categories like UI, UX, Feature, Bug, and Enhancement.
@@ -225,19 +237,6 @@ function App() {
                   Live Site
                 </a>
                 <a href="https://github.com/StepLeonard/countries-app" target="_blank" rel="noreferrer" className="project-btn github-btn">
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <h3>Food Trucks App</h3>
-              <p>Developed a full-stack food truck application...</p>
-              <div className="project-buttons">
-                <a href="https://my-food-truck-app.netlify.app/" target="_blank" rel="noreferrer" className="project-btn live-btn">
-                  Live Site
-                </a>
-                <a href="https://github.com/StepLeonard/food-trucks-app" target="_blank" rel="noreferrer" className="project-btn github-btn">
                   GitHub Repo
                 </a>
               </div>
